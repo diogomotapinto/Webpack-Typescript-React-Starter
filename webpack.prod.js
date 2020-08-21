@@ -4,12 +4,13 @@ const common = require("./webpack.common.js");
 
 module.exports = merge(common, {
   mode: "production",
-  entry: path.resolve(__dirname, "src", "index.ts"),
   output: {
-    filename: "bundle.js",
-    path: path.resolve(__dirname, "build"),
+    publicPath:
+      process.env.NODE_ENV == "production"
+        ? `http://localhost:${process.env.PORT}/`
+        : "http://localhost:3000/",
   },
   devServer: {
-    contentBase: "./build",
+    port: process.env.NODE_ENV == "production" ? process.env.PORT : 3000,
   },
 });

@@ -2,7 +2,7 @@
   "name": "typescript-webpack-react",
   "version": "1.0.0",
   "scripts": {
-    "build": "webpack --config webpack.prod.js",
+    "build": "webpack-dev-server --open --config webpack.prod.js",
     "build:dev": "webpack-dev-server --open --config webpack.dev.js",
     "start": "webpack-dev-server --open --config webpack.dev.js",
     "start:live": "webpack-dev-server --open --config webpack.dev.js --liveReload"
