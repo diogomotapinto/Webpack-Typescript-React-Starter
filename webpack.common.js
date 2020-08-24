@@ -1,5 +1,5 @@
-const HtmlWebPackPlugin = require("html-webpack-plugin");
-const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
+const HtmlWebPackPlugin = require("./node_modules/html-webpack-plugin/typings");
+const ModuleFederationPlugin = require("./node_modules/webpack/lib/container/ModuleFederationPlugin");
 
 module.exports = {
   resolve: {

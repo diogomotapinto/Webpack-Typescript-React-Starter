@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   sample:
-    container_name: react-starter
+    container_name: webpack-react-starter
     build:
       context: .
       dockerfile: Dockerfile
