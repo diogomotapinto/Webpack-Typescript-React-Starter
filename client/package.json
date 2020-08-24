@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "build": "webpack --config webpack.prod.js",
-    "build:dev": "webpack-dev-server --open --config webpack.dev.js",
-    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "build:dev": "webpack-dev-server --host 0.0.0.0 --inline --open --config webpack.dev.js",
+    "start": "webpack-dev-server --host 0.0.0.0 --inline --open --config webpack.dev.js",
     "start:live": "webpack-dev-server --open --config webpack.dev.js --liveReload"
   },
   "license": "MIT",
